@@ -1,0 +1,15 @@
+.aside {
+  padding-left: 16px;
+  &__read {
+    &-more{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-weight: 600;
+      &::before {
+        content: url(../img/ic/down.svg);
+        margin-right: 10px;
+      }
+    }
+  }
+}

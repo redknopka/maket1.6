@@ -1,0 +1,64 @@
+.technics {
+  border-bottom: 1px solid $titleBorder;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  max-width: 1120px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0px;
+  }
+  &__content {
+    display: flex;
+    text-decoration: none;
+    color: $textColor;
+    border: 1px solid $cardBorder;
+    border-radius: 6px;
+    width: 220px;
+    height: 118px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 16px;
+  }
+  &__main {
+    margin-bottom: 48px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+  }
+  &__card {
+    display: flex;
+    max-width: 240px;
+    min-width: 220px;
+    margin-left: 16px;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      max-width: 224px;
+    }
+  }
+  &__go {
+    max-width: 40px;
+    max-height: 40px;
+    align-self: flex-end;
+  }
+  &__footer {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    &-button {
+      font-family: "TT Lakes", sans-serif;
+      font-weight: 500;
+      color: $textColor;
+      border: 0;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 11px;
+    }
+  }
+}

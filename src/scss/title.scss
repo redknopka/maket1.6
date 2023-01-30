@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: bold;
+  &::before {
+    content: "";
+    width: 4px;
+    height: 40px;
+    border-radius: 0px 50px 50px 0px;
+    background: $stripColor;
+  }
+}

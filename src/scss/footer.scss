@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer__functions {
+  display: flex;
+  gap: 16px;
+}
+.footer__info {
+  margin-left: 24px;
+}
+.footer__info-item {
+  margin-bottom: 16px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #1B1C21;
+}
+.footer__email {
+  font-weight: 500;
+}
+.footer__telephone {
+  font-weight: bold;
+  font-size: 24px;
+}
+.footer__langs {
+  margin-left: 14px;
+}

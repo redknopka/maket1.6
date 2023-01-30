@@ -1,0 +1,26 @@
+.description {
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: left;
+  margin-bottom: 16px;
+  &__part1 {
+    display: block;
+  }
+  &__part2{
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: block;
+    }
+    @media screen and (min-width: 1440px) {
+      display: inline;
+    }
+  }
+  &__part3 {
+    display: none;
+    @media screen and (min-width: 1440px) {
+      display: inline;
+    }
+  }
+}
+
+

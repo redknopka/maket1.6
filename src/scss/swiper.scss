@@ -1,0 +1,35 @@
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.swiper-pagination1, .swiper-pagination2, .swiper-pagination3 {
+  text-align: center;
+  z-index: 3;
+}
+.swiper-pagination-bullet {
+  background-color: $pagination;
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1;
+  position: relative;
+}
+.swiper-pagination-bullet-active {
+  background-color: $paginationActive;
+  opacity: 1;
+}
+:root {
+  --swiper-theme-color: $paginationActive !important;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 70px;
+}
+@media screen and (max-width: 767px) {
+  .swiper-wrapper {
+    max-width: 320px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}

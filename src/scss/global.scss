@@ -1,0 +1,48 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "TT Lakes", sans-serif;
+}
+.global-wrapper {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    display: block;
+    min-width: 320px;
+  }
+}
+.link-text {
+  text-decoration: none;
+  color: $pink;
+}
+.blur {
+  transition: 1.5s;
+  filter: blur(10px);
+  pointer-events: none;
+}
+.invisible {
+  transition: display 1.5s;
+  display: none;
+}
+
+.h2-title {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $textGray;
+  padding: 16px;
+}
+.show-more::before {
+  content: url(../img/ic/down2.svg);
+  margin-right: 10px;
+}
+.show-less::before {
+  content: url(../img/ic/up.svg);
+  margin-right: 10px;
+}

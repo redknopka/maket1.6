@@ -1,17 +1,18 @@
-$bgColor: #24292e;
-$text: #fff;
+@import "variables";
+@import 'global';
+@import 'callback';
+@import 'feedback';
+@import 'prices';
+@import 'technics';
+@import 'brands';
+@import 'item';
+@import 'overlay-modal';
+@import 'info';
+@import 'invisible';
+@import 'side-content';
+@import 'central-content';
+@import 'swiper';
+@import 'links';
+@import '../fonts/TTLakes/stylesheet.css';
+@import '../../node_modules/swiper/swiper-bundle.css';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}

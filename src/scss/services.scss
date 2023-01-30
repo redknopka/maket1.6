@@ -1,0 +1,35 @@
+.services {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  overflow-x: auto;
+  width: 100%;
+  padding-left: 16px;
+  gap: 16px;
+  margin-bottom: 18px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  margin-bottom: 0px;
+  &__button {
+    height: 23px;
+    flex-shrink: 0;
+    font-family: "TT Lakes";
+    border: 0;
+    border-radius: 6px;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:focus {
+      border: 2px solid $btnBorder;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    flex-wrap: wrap;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+

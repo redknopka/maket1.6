@@ -1,0 +1,88 @@
+@import 'invisible';
+.brands {
+  font-family: "TT Lakes", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  border-bottom: 1px solid $titleBorder;
+  padding-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    width: auto;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1120px;
+  }
+
+  &__header {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: $titleBorder;
+    border-radius: 1px;
+    width: auto;
+  }
+
+  &__main {
+    margin-bottom: 48px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    max-width: 240px;
+    min-width: 220px;
+    height: 72px;
+    max-height: 74px;
+    margin-left: 16px;
+    @media screen and (max-width: 767px) {
+      margin-left: 0px;
+      height: 130px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      max-width: 224px;
+    }
+  }
+
+  &__logo {
+    border: 1px solid $cardBorder;
+    border-radius: 6px;
+    padding: 16px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer-button {
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    color: $textColor;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 11px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__logo {
+    text-decoration: none;
+  }
+
+  &__footer {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+
+

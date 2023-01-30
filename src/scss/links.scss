@@ -1,0 +1,43 @@
+.links {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $titleBorder;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin: 0;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1440px) {
+    border-bottom: none;
+  }
+  &__title {
+    display: none;
+    font-size: 28px;
+    font-weight: bold;
+    @media screen and (min-width: 1440px) {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+    }
+  }
+  .item-call {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: block;
+    }
+  }
+  .item-chat {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: block;
+    }
+  }
+  .item-profile {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: block;
+    }
+  }
+}
